@@ -14,9 +14,9 @@ print("=" *80)
 cnt = int(input('1.크롤링 할 건수는 몇건입니까?: '))
 page_cnt = math.ceil(cnt/60)
 
-f_dir = input("2.파일을 저장할 폴더명만 쓰세요(기본경로:c:\\temp\\):")
+f_dir = input("2.파일을 저장할 폴더명만 쓰세요(기본경로:c:\\py_temp\\):")
 if f_dir == '' :
-    f_dir = "c:\\temp\\"
+    f_dir = "c:\\py_temp\\"
     
 print("\n")
 
@@ -43,8 +43,7 @@ os.chdir(img_dir)
 s_time = time.time( )
 
 #Step 4. 웹사이트 접속 후 해당 메뉴로 이동합니다.
-chrome_path = "c:/py_temp/chromedriver.exe"
-driver = webdriver.Chrome(chrome_path)
+driver = webdriver.Chrome()
 query_url='https://www.coupang.com/np/categories/194276'
 driver.get(query_url)
 time.sleep(5)
