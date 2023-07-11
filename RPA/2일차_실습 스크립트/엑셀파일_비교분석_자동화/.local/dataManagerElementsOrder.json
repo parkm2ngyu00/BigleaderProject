@@ -1,0 +1,36 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strKeyColumn&Flowchart_1",
+        "arrColumnName&Flowchart_1",
+        "strFileResult&Flowchart_1",
+        "strFileTemp&Flowchart_1",
+        "strFile2&Flowchart_1",
+        "strFile1&Flowchart_1",
+        "strFolder&Flowchart_1",
+        "dtData1&Flowchart_1",
+        "dtData2&Flowchart_1",
+        "dtCheckData&Flowchart_1",
+        "IsFileTempExist&Sequence_32",
+        "IsFileResultExist&Sequence_32",
+        "dtTemp&Sequence_6",
+        "intRowIndex&Sequence_3",
+        "intRowIndex&Sequence_23"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

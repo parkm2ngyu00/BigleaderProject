@@ -1,0 +1,67 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtSalePoint_Interpark&Sequence_1",
+        "dateLastDay&Sequence_1",
+        "dtBookList&Sequence_1",
+        "dtSalePoint_Yes24&Sequence_1",
+        "dtSalePoint_Aladin&Sequence_1",
+        "intSalePoint&Sequence_1",
+        "strLastDay&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "알라딘.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtBookList&Sequence_1",
+        "strSalePoint&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtBookList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "예스24.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtBookList&Sequence_1",
+        "strSalePoint&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtBookList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "인터파크.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtBookList&Sequence_1",
+        "strSalePoint&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtBookList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
