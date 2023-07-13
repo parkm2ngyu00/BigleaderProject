@@ -1,3 +1,5 @@
+use my_testdb;
+
 # 1번 문제
 select profno "교수번호", name "교수이름", id "ID"
 from professor
@@ -23,7 +25,7 @@ and (bonus is not null);
 select profno "번호", name "이름", deptno "학과번호"
 from professor
 where deptno = 101
-union
+union all
 select studno, name, deptno1
 from student
 where deptno1 = 101;

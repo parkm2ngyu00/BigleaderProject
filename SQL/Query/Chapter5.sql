@@ -1,3 +1,5 @@
+use my_testdb;
+
 # 1. 다양한 그룹 함수의 종류
 
 # sum, avg, max, min
@@ -51,3 +53,9 @@ dense_rank() over (partition by deptno order by sal desc) "급여순위"
 from emp3;
 
 #6. 누적 합계 구하기
+select empno, ename, sal, sum(sal) over(order by sal) "급여 누적합계"
+from emp3;
+
+select empno, ename, deptno, sal,
+sum(sal) over(partition by deptno order by sal) "급여 누적합계"
+from emp3;
