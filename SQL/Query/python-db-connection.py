@@ -3,10 +3,10 @@ import mysql.connector
 
 #연결 설정
 db = mysql.connector.connect(
-    host = '127.0.0.1', #loclhost
+    host = '127.0.0.1', #localhost
     user = 'root',
     password = 'brian1026',
-    database = 'my_testdb'
+    database = 'big_leader'
 )
 #cursor 선언
 cursor = db.cursor()
@@ -19,7 +19,7 @@ titles = soup.find('div',class_="srchResultListW").findAll('p','title')
 for title in titles:
     title = title.get_text()
     print(f'제목 : {title}')
-    query = f"INSERT INTO riss_table.title (s_title) VALUES ('{title}');"
+    query = f"INSERT INTO riss_table VALUES ('{title}');"
     cursor.execute(query)
 db.commit()
 #종료-
