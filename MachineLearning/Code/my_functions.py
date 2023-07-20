@@ -2,6 +2,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report
 
+# 받은 데이터프레임에 대해 feature에 정규화를 한 후 train/test 셋을 나눠주고 반환하는 함수
 def create_feature_target(df, split=0.2):
     X = df.iloc[:, :-1]
     y = df.iloc[:, -1]
@@ -12,6 +13,7 @@ def create_feature_target(df, split=0.2):
     X_test_std = std_scale.transform(X_test)
     return X_train_std, X_test_std, y_train, y_test
 
+# 평가함수
 def evaluate(y_test, pred):
     accuracy = accuracy_score(y_test, pred)
     precision = precision_score(y_test, pred, average='macro')
