@@ -7,3 +7,4 @@
 ./Crawling/강의자료/
 *.pptx
 .*
+__pycache__
