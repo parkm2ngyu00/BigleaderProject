@@ -13,7 +13,7 @@ def create_feature_target(df, split=0.2):
     X_test_std = std_scale.transform(X_test)
     return X_train_std, X_test_std, y_train, y_test
 
-# 평가함수
+# 분류 평가함수
 def clf_eval(y_test, pred):
     accuracy = accuracy_score(y_test, pred)
     precision = precision_score(y_test, pred, average='macro')
