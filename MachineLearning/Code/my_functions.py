@@ -14,7 +14,7 @@ def create_feature_target(df, split=0.2):
     return X_train_std, X_test_std, y_train, y_test
 
 # 평가함수
-def evaluate(y_test, pred):
+def clf_eval(y_test, pred):
     accuracy = accuracy_score(y_test, pred)
     precision = precision_score(y_test, pred, average='macro')
     recall = recall_score(y_test, pred, average='macro')
